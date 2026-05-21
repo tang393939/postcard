@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本钢档案解密·明信片</title>
+    <style>
+        body {
+            font-family: "黑体-简", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        #showBtn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #C19175;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #showBtn:hover {
+            background-color: #db9266;
+        }
+        #postcardImg {
+            display: none;
+            margin-top: 30px;
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <button id="showBtn">本钢档案解密·明信片</button>
+    <img id="postcardImg" src="https://cdn.phototourl.com/free/2026-05-21-ce8a9fa1-9b67-47e0-97c8-30ffbd50521c.jpg" alt="明信片">
+
+    <script>
+        document.getElementById("showBtn").addEventListener("click", function() {
+            document.getElementById("postcardImg").style.display = "block";
+        });
+    </script>
+</body>
+</html>
