@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成你的明信片</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        #showBtn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #e63946;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #showBtn:hover {
+            background-color: #d62828;
+        }
+        #postcardImg {
+            display: none;
+            margin-top: 30px;
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <button id="showBtn">点击生成你的明信片</button>
+    <img id="postcardImg" src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUV6ZqDrUrj9J4FMuXlP1t8AhtyK6zugAC1yQAAtk5eFQNbz1Mdem6QzsE.jpg" alt="明信片">
+
+    <script>
+        document.getElementById("showBtn").addEventListener("click", function() {
+            document.getElementById("postcardImg").style.display = "block";
+        });
+    </script>
+</body>
+</html>
